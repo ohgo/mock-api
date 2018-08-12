@@ -1,4 +1,7 @@
 # mock-api
+
+[![CircleCI](https://circleci.com/gh/ohgo/mock-api/tree/master.svg?style=svg)](https://circleci.com/gh/ohgo/mock-api/tree/master)
+
 Register fake responses to a url pattern.
 
 ## Put a sample record in the db
