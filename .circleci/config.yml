@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: aws cloudformation validate-template --template-body file://cf.yaml
       - run: aws cloudformation package --template-file cf.yaml --output-template-file cf.pkg.yaml --s3-bucket ohgo --s3-prefix "mock-api/1.0.0"
-      - run: ws cloudformation deploy --template-file cf.pkg.yaml --stack-name ohgo-mock-api --capabilities CAPABILITY_IAM
+      - run: aws cloudformation deploy --template-file cf.pkg.yaml --stack-name ohgo-mock-api --capabilities CAPABILITY_IAM
